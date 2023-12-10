@@ -915,7 +915,10 @@
           console.log(email, "email");
           // Send data to the NestJS server using Axios
           axios
-            .post("http://localhost:3333/createEmail", { email })
+            .post(
+              "https://server-file-nest-rahuls-projects-365a02b0.vercel.app/createEmail",
+              { email }
+            )
             .then((response) => {
               console.log("Form submitted:", response.data);
               // Handle success, maybe show a success message or redirect
